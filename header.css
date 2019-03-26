@@ -1,0 +1,24 @@
+header {
+    background-color: #e24647;
+    overflow: hidden;
+}
+
+h1, a {
+   color: white; 
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 40px;
+    float: left;
+}
+
+nav {
+    text-align: right;
+}
+
+a {
+   text-decoration: none;
+   font-family: 'Segoe UI';
+   font-size: 21px;
+}
