@@ -47,3 +47,29 @@
 - Visual.
 - stylesheet - Folha de estilo em cascata
 
+## Float
+- É a propriedade que cria um novo contexto para o elemento.
+- Os elementos abaixo sobem ocupando o contexto do elemento que agora esta no novo contexto. Este elemento fica atrás do elemento com float.
+
+### - Regras e observações:
+ - O conteudo do elemento que sobe sempre será mostrado.
+   - O browser ajustará este conteudo para sempre ser mostrado.
+   - Nuca esconde o conteudo
+
+- O tamanho do elemento com float que antes ocupava o tamanho total do elemento pai, agora ocupa somente o tamanho do conteudo.
+  - width e height com float é o tamanho do conteudo.
+
+- O pai ignora o elemento com float.
+   - Se todos os elementos dentro do pai estiverem com float, o pai praticamente some, pois ele ignora todos os elementos com float.
+
+## Overflow
+ - *`overflow: hidden;`* É a propriedade que esconde todo o conteudo que *vaza* do tamanho do elemento.
+    - Por padrão o navegado não esconde o conteudo que por algumaconfiguração de tamanho *vaza* do tamanho do elemeto.
+
+- Esta proprieda aplica um recalculo de tamanho de contexto quando aplicado a elementos que estão com float.
+   - Ele aplica o tamnho tamnho deste elemento para o tamanho dos elemento que estão com float.
+
+## Padding - Margin
+`margin` - É o respiro ou espaçamento entre os elementos.
+
+`padding` - É o respiro ou espaçamento entre o conteudo e seu proprio elemento.
