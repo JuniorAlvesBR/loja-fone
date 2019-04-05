@@ -64,10 +64,10 @@
 
 ## Overflow
  - *`overflow: hidden;`* É a propriedade que esconde todo o conteudo que *vaza* do tamanho do elemento.
-    - Por padrão o navegado não esconde o conteudo que por algumaconfiguração de tamanho *vaza* do tamanho do elemeto.
+    - Por padrão o navegado não esconde o conteudo que por alguma configuração de tamanho *vaza* do tamanho do elemeto.
 
 - Esta proprieda aplica um recalculo de tamanho de contexto quando aplicado a elementos que estão com float.
-   - Ele aplica o tamnho tamnho deste elemento para o tamanho dos elemento que estão com float.
+   - Ele aplica o tamanho deste elemento para o tamanho dos elemento que estão com float.
 
 ## Padding - Margin
 `margin` - É o respiro ou espaçamento entre os elementos.
