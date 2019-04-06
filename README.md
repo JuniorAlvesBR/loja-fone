@@ -64,12 +64,32 @@
 
 ## Overflow
  - *`overflow: hidden;`* É a propriedade que esconde todo o conteudo que *vaza* do tamanho do elemento.
-    - Por padrão o navegado não esconde o conteudo que por alguma configuração de tamanho *vaza* do tamanho do elemeto.
+    - Por padrão o navegado não esconde o conteudo que por alguma configuração *vaza* do tamanho do elemeto.
 
-- Esta proprieda aplica um recalculo de tamanho de contexto quando aplicado a elementos que estão com float.
-   - Ele aplica o tamanho deste elemento para o tamanho dos elemento que estão com float.
+- Esta proprieda aplica um recalculo de tamanho de contexto ao elementos que estão com float.
+   - Ele aplica o tamanho do elemento pai para o tamanho dos elemento que estão com float.
 
 ## Padding - Margin
 `margin` - É o respiro ou espaçamento entre os elementos.
-
 `padding` - É o respiro ou espaçamento entre o conteudo e seu proprio elemento.
+
+## Display
+ `inline` 
+          - Coloca o elemento em linha.
+          - Não aceita propriedades de `width` e `height`
+          - Os elementos tem comportamentos de palavras como se qfossem paragrafos
+          - Aceitam parametros de alinhamento de linha como `text-align: center, justify`
+          - Aceita tambem propriedades de altura de linha.
+
+`block`
+          - Coloca aos elementos um embaixo do outro
+          - Acita as propriedades `width` e `height`
+          - Não aceita as propriedades de linha como `text-align`
+          - É possivel utilizar a propriedade `margen: auto` para posicionar elementos no DOM.
+
+`inline-block`
+          - Este herda o melhor dos dois mundos `inline` e `block`
+          - Os elementos serão posicionados em linha.
+          - É possivel utilizar o `width` e `right`.
+          - Tambem podem receber os paramentros de linha como `text-align: center, justify`
+          - O Elemento tambem recebe comportamento de palavra.
