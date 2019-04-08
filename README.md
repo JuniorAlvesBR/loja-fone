@@ -73,3 +73,5 @@
 `margin` - É o respiro ou espaçamento entre os elementos.
 
 `padding` - É o respiro ou espaçamento entre o conteudo e seu proprio elemento.
+
+`vertical-align` funciona apenas com o *display: inlien-block* ou seja te que ter no minimo 2 elementos que estaja em linha para poder fazer o alinhamento. O padrão é *baseline* a base da linha.
