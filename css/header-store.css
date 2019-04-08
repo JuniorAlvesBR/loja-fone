@@ -1,26 +1,27 @@
 .header-store {
     color: white; 
     overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.title {
+.header-store > .title {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     float: left;
+    text-transform: uppercase;
 }
 
-.navigation {
+.header-store > .navigation {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 21px;
     float: right;
 }
 
-.action {
+.header-store .action {
    text-decoration: none;
    color: inherit;
    margin-right: 60px;
 }
 
-.last {
+.header-store .action.-last {
     margin-right: 0px;
 }
