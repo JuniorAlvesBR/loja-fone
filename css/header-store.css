@@ -12,6 +12,25 @@
     text-transform: uppercase;
 }
 
+.header-store > .search {
+    float: right;
+    margin-right: 65px;
+}
+
+.header-store .search .search-bar {
+    width: 358px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+::placeholder {
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
 .header-store > .navigation {
     font-family: 'Segoe UI', Verdana, sans-serif;
     font-size: 21px;
