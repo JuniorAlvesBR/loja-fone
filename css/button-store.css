@@ -15,6 +15,11 @@
     cursor: pointer;
 }
 
+.button-store:hover {
+    background-color: #fff;
+    color: blue;
+}
+
 .button-store.-second {
     background-color: transparent;
     border: 2px solid #fff;
@@ -24,10 +29,14 @@
     margin-right: 38px;
 }
 
-.button-store > button, .button-store > a {
+.button-store.-second:hover {
+    background-color: #fff;
+    color: red;
+}
+
+/* .button-store > button, .button-store > a {
     font-size: inherit;
     background-color: inherit;
     border: inherit;
     color: inherit;
-
-}
+} */
