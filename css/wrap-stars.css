@@ -1,0 +1,11 @@
+.wrap-stars {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+    margin-right: 48px;
+}
+
+.bigstar {
+    display: block;
+    margin-top: 12px;
+}
