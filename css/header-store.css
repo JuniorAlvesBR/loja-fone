@@ -10,6 +10,7 @@
     font-size: 40px;
     float: left;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .header-store [type="search"] {
@@ -22,6 +23,10 @@
     color: #fff;
     width: 358px;
     padding: 8px;
+}
+
+.header-store [type="search"]::placeholder {
+    color: #fff;
 }
 
 .header-store > .navigation {
