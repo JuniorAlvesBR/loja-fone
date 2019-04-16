@@ -13,11 +13,16 @@
     text-decoration: none;
     border: none;
     cursor: pointer;
+    transition: all 300ms linear;
 }
 
 .button-store:hover {
     background-color: #fff;
-    color: blue;
+    color: #e24647;
+}
+
+.button-store:active {
+    transform: scale(0.9);
 }
 
 .button-store.-second {
@@ -31,7 +36,7 @@
 
 .button-store.-second:hover {
     background-color: #fff;
-    color: red;
+    color: #e24647;
 }
 
 /* .button-store > button, .button-store > a {
