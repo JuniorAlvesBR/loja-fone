@@ -13,6 +13,12 @@
     transform: translateX(-100%);
     top: 8px;
     left: -47px;
+    cursor: pointer;
+}
+
+.description-product .image:hover {
+    transition: all 200ms linear;
+    transform: scale(1.2);
 }
 
 .description-product > .item.-star {
