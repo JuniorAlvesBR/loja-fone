@@ -41,6 +41,10 @@
    margin-right: 60px;
 }
 
+.header-store .action:hover {
+    text-decoration: underline;
+}
+
 .header-store .action.-last {
     margin-right: 0px;
 }
