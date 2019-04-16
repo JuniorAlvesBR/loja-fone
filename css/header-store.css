@@ -36,13 +36,27 @@
 }
 
 .header-store .action {
-   text-decoration: none;
-   color: inherit;
-   margin-right: 60px;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    margin-right: 60px;
 }
 
-.header-store .action:hover {
-    text-decoration: underline;
+.header-store .action::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transition: all 300ms ease-in-out 0s;
+}
+
+.header-store .action:hover::before {
+    visibility: visible;
+    width: 100%;
 }
 
 .header-store .action.-last {
