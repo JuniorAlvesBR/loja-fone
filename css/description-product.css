@@ -16,8 +16,11 @@
     cursor: pointer;
 }
 
-.description-product .image:hover {
+.description-product .icon {
     transition: all 200ms linear;
+}
+
+.description-product .icon:hover {
     transform: scale(1.2);
 }
 
