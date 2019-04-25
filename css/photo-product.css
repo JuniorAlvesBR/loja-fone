@@ -8,3 +8,18 @@
     margin-right: 156px;
     padding-left: 105px;
 }
+
+@media (max-width: 1425px) {
+    .photo-product {
+        margin-right: 140px;
+    }
+}
+
+@media (max-width: 1410px) {
+    .photo-product {
+        display: block;
+        margin-right: 0;
+        border-radius: 0;
+        text-align: center;
+    }
+}
