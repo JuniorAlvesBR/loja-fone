@@ -88,12 +88,20 @@
     .header-store {
         padding-left: 30px;
         padding-right: 30px;
+        margin-bottom: 30px;
     }
 
     .header-store [type="search"] {
         display: none;
     }
 }
+
+@media (max-width: 660px) {
+    .header-store {
+        margin-bottom: 30px;
+    }
+}
+
 
 @media (max-width: 532px) {
     .header-store .action {

@@ -28,6 +28,7 @@
 @media (max-width: 660px) {
     .photo-product {
         height: auto;
+        padding-left: 0;
     }
 
     .photo-product > .photo {
