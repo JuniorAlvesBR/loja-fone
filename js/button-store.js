@@ -1,3 +1,7 @@
 const $second = window.document.querySelector(".-second");
 
-console.log($second);
+$second.addEventListener("click", handleclick);
+
+function handleclick() {
+    console.log("Deu Certo");
+}
