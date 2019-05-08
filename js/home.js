@@ -1,9 +1,9 @@
 const $second = window.document.querySelector(".-second");
-const $action = window.document.querySelector(".action.-last")
 
 
 $second.addEventListener("click", handleclick);
 
 function handleclick() {
-    $action.innerHTML = "Teste-ha";
+    const $action = window.document.querySelector(".-last")
+    $action.textContent = "Teste-ha";
 }
