@@ -16,6 +16,10 @@
     cursor: pointer;
 }
 
+.description-product > .item.-active {
+    background-color: #fff;
+}
+
 .description-product .icon {
     transition: all 200ms linear;
 }
