@@ -17,15 +17,27 @@
 }
 
 .description-product > .item.-active {
-    background-color: #fff;
+    background-color: #252c41;
 }
 
 .description-product .icon {
-    transition: all 200ms linear;
+    transition: all 50ms linear;
 }
 
 .description-product .icon:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+.description-product .icon.-active {
+    display: none;
+}
+
+.description-product .item.-active .icon {
+    display: none;
+}
+
+.description-product .item.-active .icon.-active {
+    display: block;
 }
 
 .description-product > .item.-star {
