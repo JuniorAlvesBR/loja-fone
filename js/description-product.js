@@ -6,16 +6,23 @@
 5 - No momento que o usuario clicar, nós queremos mostrar um Texto na tela
 */
 
-const $heart = window.document.querySelector(".-heart");
+const $heart = document.querySelector(".-heart");
+const $firstStar = document.querySelector(".star");
 
-$heart.addEventListener("click", handleClick);
+console.log($firstStar)
 
-function handleClick() {
+$heart.addEventListener("click", handleClickHeart);
+$firstStar.addEventListener('click', handleClickFirstStar);
+
+function handleClickHeart() {
     // if ($heart.classList.contains("-active")) {
     //     $heart.classList.remove("-active");
     // } else {
     //     $heart.classList.add("-active");
     // }
     $heart.classList.toggle("-active");
+}
 
+function handleClickFirstStar() {
+    $firstStar.classList.toggle("-active");
 }

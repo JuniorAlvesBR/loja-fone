@@ -28,15 +28,37 @@
     transform: scale(1.1);
 }
 
+/* Esconde todas as classe icon active por padrão */
 .description-product .icon.-active {
     display: none;
 }
 
+/*  Efeito de troca do Coração
+*   O .-active é inserido e removido pelo JS no evento de click
+*   Quando houver o .-active, ele esconde o elemento .icon que é o coração inativo e... */
 .description-product .item.-active .icon {
     display: none;
 }
 
+/* * ... Mostra o Elelemto .icon.-active que é o coração ativo. */
 .description-product .item.-active .icon.-active {
+    display: block;
+}
+/* **** */
+
+/* coloca em linha as estrelas */
+.description-product .star {
+    display: inline-block;
+}
+
+/* Efeito ativar e desativar das estrelas realizado pelo JS removendo e inserindo o .-active */
+/*  Esconde o .icon quando houver o .-active no elemento .star que é a estrela desativada*/
+.description-product .star.-active > .icon {
+    display: none;
+}
+
+/* Mostra o .-active quanddo houver o .-active no elemento .star que é a estrela ativada */
+.description-product .star.-active > .-active {
     display: block;
 }
 
