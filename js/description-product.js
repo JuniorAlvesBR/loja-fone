@@ -6,23 +6,69 @@
 5 - No momento que o usuario clicar, nós queremos mostrar um Texto na tela
 */
 
+// BLoco de configuração do Coração
 const $heart = document.querySelector(".-heart");
-const $firstStar = document.querySelector(".star");
-
-console.log($firstStar)
-
 $heart.addEventListener("click", handleClickHeart);
-$firstStar.addEventListener('click', handleClickFirstStar);
 
 function handleClickHeart() {
-    // if ($heart.classList.contains("-active")) {
-    //     $heart.classList.remove("-active");
-    // } else {
-    //     $heart.classList.add("-active");
-    // }
     $heart.classList.toggle("-active");
 }
+
+//Bloco de configuração do Coração mais manual
+
+/*
+function handleClickHeart(){
+    if ($heart.classList.contains("-active")) {
+        $heart.classList.remove("-active");
+    } else {
+        $heart.classList.add("-active");
+    }
+}
+*/
+
+// =========================
+
+// Bloco de configuração das Estrelas
+const $stars = document.querySelectorAll(".star"); // Com querySelectoAll eu crio uma lista com todos os .star do html
+
+$stars.forEach(function($star) {
+    $star.addEventListener("click", handleClickStar);
+})
+
+function handleClickStar() {
+    this.classList.toggle("-active");
+}
+
+
+// Bloco de configuração das estrela de forma mais manual
+
+/*
+const $firstStar = document.querySelector(".star"); // Com querySelector eu pego o primiero .star de todos os .star do html
+$firstStar.addEventListener("click", handleClickFirstStar);
+
+$stars[0].addEventListener("click", handleClickStar0);
+$stars[1].addEventListener("click", handleClickStar1);
+$stars[2].addEventListener("click", handleClickStar2);
+$stars[3].addEventListener("click", handleClickStar3);
+$stars[4].addEventListener("click", handleClickStar4);
 
 function handleClickFirstStar() {
     $firstStar.classList.toggle("-active");
 }
+
+function handleClickStar0() {
+    $star[0].classList.toggle("-active");
+}
+function handleClickStar1() {
+    $star[1].classList.toggle("-active");
+}
+function handleClickStar2() {
+    $star[2].classList.toggle("-active");
+}
+function handleClickStar3() {
+    $star[3].classList.toggle("-active");
+}
+function handleClickStar4() {
+    $star[4].classList.toggle("-active");
+}
+*/
