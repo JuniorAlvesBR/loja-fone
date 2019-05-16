@@ -6,6 +6,23 @@
 5 - No momento que o usuario clicar, nós queremos mostrar um Texto na tela
 */
 
+// Simplificando todo o conteudo do código abaixo:
+
+const $heart = document.querySelector(".-heart");
+const $stars = document.querySelectorAll(".star")
+
+$heart.addEventListener("click", handleClick);
+
+$stars.forEach(function($star) {
+    $star.addEventListener("click", handleClick);
+})
+
+function handleClick() {
+    this.classList.toggle("-active");
+}
+
+
+/*
 // BLoco de configuração do Coração
 const $heart = document.querySelector(".-heart");
 $heart.addEventListener("click", handleClickHeart);
@@ -16,7 +33,7 @@ function handleClickHeart() {
 
 //Bloco de configuração do Coração mais manual
 
-/*
+
 function handleClickHeart(){
     if ($heart.classList.contains("-active")) {
         $heart.classList.remove("-active");
@@ -24,7 +41,7 @@ function handleClickHeart(){
         $heart.classList.add("-active");
     }
 }
-*/
+
 
 // =========================
 
@@ -42,7 +59,7 @@ function handleClickStar() {
 
 // Bloco de configuração das estrela de forma mais manual
 
-/*
+
 const $firstStar = document.querySelector(".star"); // Com querySelector eu pego o primiero .star de todos os .star do html
 $firstStar.addEventListener("click", handleClickFirstStar);
 
