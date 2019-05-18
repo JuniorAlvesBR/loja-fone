@@ -117,6 +117,14 @@
         text-align: center;
     }
 
+    .description-product > .item.-heart, .description-product > .item.-active {
+        position: static;
+        transform: initial;
+        cursor: pointer;
+        width: 33px;
+        height:29px;
+    }
+
     .description-product > .item.-star {
         float: left;
         margin-right: 10px;
