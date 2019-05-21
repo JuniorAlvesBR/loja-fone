@@ -25,7 +25,7 @@
     padding: 8px;
 }
 
-.header-store .search, .header-store .close {
+.header-store .searchIcon, .header-store .searchClose {
     display: none;
 }
 
@@ -105,16 +105,34 @@
     }
     
     .header-store .-active[type="search"] {
-        transition: transform 300ms cubic-bezier(0, 0, 0.96, 1.26);
+        transition: transform 300ms linear;
         transform: translateX(0);
     }
     
-    .header-store .search {
-        display: inline;
+    .header-store .searchIcon {
+        display: inline-block;
         width: 40px;
         position: absolute;
         top: 0;
         left: 0;
+        cursor: pointer;
+    }
+    
+    .header-store .searchIcon.-inactive {
+        display: none;
+        transition: display 300ms linear;
+    }
+
+    .header-store .searchClose {
+        display: none;
+    }
+
+    .header-store .searchClose.-active {
+        display: inline-block;
+        width: 40px;
+        position: absolute;
+        top: 0;
+        left: 315px;
         cursor: pointer;
     }
 }
