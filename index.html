@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/container-store.css">
         <link rel="stylesheet" href="css/header-store.css">
+        <link rel="stylesheet" href="css/input-search.css">
         <link rel="stylesheet" href="css/wrap-product.css">
         <link rel="stylesheet" href="css/photo-product.css">
         <link rel="stylesheet" href="css/description-product.css">
@@ -27,9 +28,11 @@
                 <h1 class="title">Logo</h1>
                 
                 <nav class="navigation">
-                    <input type="search" name="Buscar" placeholder="Buscar">
-                    <img src="img/lupa.svg" alt="Lupa" class="searchIcon">
-                    <img src="img/close.svg" alt="Fechar" class="searchClose">
+                    <form class="input-search">
+                       <input type="search" class="content -active" placeholder="Buscar"><!--
+                    --><input type="image" class="icon -search -active" src="img/lupa.svg"><!--
+                    --><input type="image" class="icon -close" src="img/close.svg">
+                    </form>
                     <a class="action" href="#">Produtos</a>
                     <a class="action" href="#">Serviços</a>
                     <a class="action -last" href="#">Carrinho (10)</a>
@@ -97,7 +100,7 @@
 
         </div>
             
-        <script src="js/header-store.js"></script>
+        <script src="js/input-search.js"></script>
         <script src="js/description-product.js"></script>
         <script src="js/home.js"></script>
     </body>

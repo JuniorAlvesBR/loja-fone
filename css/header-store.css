@@ -13,22 +13,6 @@
     cursor: pointer;
 }
 
-.header-store [type="search"] {
-    background-color: transparent;
-    margin-right: 65px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    font-family: Arial, 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #fff;
-    width: 358px;
-    padding: 8px;
-}
-
-.header-store .searchIcon, .header-store .searchClose {
-    display: none;
-}
-
 .header-store > .navigation {
     font-family: 'Segoe UI', Verdana, sans-serif;
     font-size: 21px;
@@ -93,48 +77,6 @@
         padding-left: 30px;
         padding-right: 30px;
     }
-
-    .header-store [type="search"] {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateX(-88%);
-        background-color: #ffffff;
-        color: #000000;
-        transition: transform 300ms linear;
-    }
-    
-    .header-store .-active[type="search"] {
-        transition: transform 300ms linear;
-        transform: translateX(0);
-    }
-    
-    .header-store .searchIcon {
-        display: inline-block;
-        width: 40px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        cursor: pointer;
-    }
-    
-    .header-store .searchIcon.-inactive {
-        display: none;
-        transition: display 300ms linear;
-    }
-
-    .header-store .searchClose {
-        display: none;
-    }
-
-    .header-store .searchClose.-active {
-        display: inline-block;
-        width: 40px;
-        position: absolute;
-        top: 0;
-        left: 315px;
-        cursor: pointer;
-    }
 }
 
 @media (max-width: 660px) {
@@ -168,7 +110,7 @@
 }
 
 @media (max-width: 340px) {
-    .header-store > .navigation {
+    .header-store .action {
         display: none;
     }
 }
