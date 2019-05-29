@@ -125,21 +125,31 @@
 }
 
 @media (max-width: 340px) {
+    .header-store .list {
+        background-color: #ffffff;
+        color: #000000;
+        width: 100vw;
+        padding: 40px 0 20px;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        transform: translateX(100%);
+    }
+
     .header-store .item.-menu {
         display: block;
         box-sizing: border-box;
         width: 40px;
         height: 40px;
-        background-image: url("../img/menu.svg");
-        background-repeat: no-repeat;
-        background-color: #ffffff;
-        background-position: center;
+        background: url(../img/menu.svg) no-repeat center #ffffff; /* Refatoração do código */
         text-indent: -9999px;
         margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
-    .header-store .action {
-        display: none;
+    .header-store .item {
+        display: block;
     }
-
 }
