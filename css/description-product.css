@@ -18,6 +18,7 @@
 
 .description-product > .item.-active {
     background-color: #252c41;
+    width: 33px;
 }
 
 .description-product .icon {

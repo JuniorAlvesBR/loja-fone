@@ -31,4 +31,10 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+@media (max-width: 340px) {
+    .container-store {
+        overflow-x: hidden;
+    }
+}
 }
