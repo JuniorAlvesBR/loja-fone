@@ -7,6 +7,19 @@
     border-bottom-right-radius: 150px;
     margin-right: 156px;
     padding-left: 105px;
+    box-shadow: 0 0 39px 0 rgba(50, 50, 50, 0.36);
+    position: relative;
+}
+
+.photo-product::before {
+    content: '';
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -20;
+    transform: translateX(-100%);
 }
 
 @media (max-width: 1425px) {
@@ -22,6 +35,7 @@
         margin-bottom: 30px;
         border-radius: 0;
         text-align: center;
+        padding-left: 0;
     }
 }
 
@@ -30,7 +44,9 @@
         height: auto;
         padding-left: 0;
     }
+}
 
+@media (max-width: 500px) {
     .photo-product > .photo {
         width: 100%;
     }
