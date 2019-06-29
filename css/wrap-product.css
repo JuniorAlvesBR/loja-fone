@@ -9,6 +9,7 @@
     position: absolute;
     bottom: 0;
     transform: translateY(calc(100% + 98px));
+    width: 470px;
 }
 
 @media (max-width: 1410px) {
